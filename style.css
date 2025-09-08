@@ -1,0 +1,122 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1f6feb;
+}
+
+/* ==== HEADER ==== */
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+  border-bottom: 1px solid #21262d;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-size: 1.3rem;
+  color: #8b949e;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+header p {
+  max-width: 700px;
+  margin: 15px auto;
+  color: #c9d1d9;
+}
+
+/* ==== BOTÓN CV ==== */
+.cv-button {
+  margin: 20px 0;
+}
+
+.cv-button a {
+  display: inline-block;
+  background: #238636;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cv-button a:hover {
+  background: #2ea043;
+  transform: scale(1.05);
+}
+
+/* ==== NAVEGACIÓN ==== */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #79c0ff;
+}
+
+/* ==== SECCIONES ==== */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  background: #161b22;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #21262d;
+}
+
+section ul li strong {
+  color: #58a6ff;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #161b22;
+  color: #8b949e;
+  border-top: 1px solid #21262d;
+}
+
+/* ==== DETALLES INTERACTIVOS ==== */
+section ul li:hover {
+  border-color: #58a6ff;
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
