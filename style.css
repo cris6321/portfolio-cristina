@@ -4,18 +4,22 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d1117;
   color: #e6edf3;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 h1, h2, h3 {
   color: #58a6ff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 h2 {
   border-bottom: 2px solid #21262d;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 18px;
 }
 
 a {
@@ -31,43 +35,44 @@ a:hover {
 /* ==== HEADER ==== */
 header {
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 70px 25px 50px;
   background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
   border-bottom: 1px solid #21262d;
 }
 
 header h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 header h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #8b949e;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 header p {
-  max-width: 700px;
-  margin: 15px auto;
+  max-width: 750px;
+  margin: 20px auto;
   color: #c9d1d9;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* ==== BOTÓN CV ==== */
 .cv-button {
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 .cv-button a {
   display: inline-block;
   background: #238636;
   color: #ffffff;
-  padding: 12px 28px;
-  border-radius: 6px;
+  padding: 14px 30px;
+  border-radius: 8px;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .cv-button a:hover {
@@ -81,9 +86,9 @@ nav {
 }
 
 nav a {
-  margin: 0 12px;
+  margin: 0 18px;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
@@ -95,9 +100,9 @@ nav a:hover {
 
 /* ==== SECCIONES ==== */
 section {
-  max-width: 900px;
-  margin: 70px auto;
-  padding: 0 20px;
+  max-width: 950px;
+  margin: 80px auto;
+  padding: 0 25px;
 }
 
 section ul {
@@ -107,9 +112,9 @@ section ul {
 
 section ul li {
   background: #161b22;
-  margin-bottom: 15px;
-  padding: 18px 22px;
-  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 20px 25px;
+  border-radius: 10px;
   border: 1px solid #21262d;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -123,13 +128,64 @@ section ul li:hover {
   transform: translateY(-3px);
 }
 
+/* ==== CONTACTO ==== */
+#contacto {
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.contact-card {
+  background: #161b22;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid #21262d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.3s ease;
+}
+
+.contact-card i {
+  font-size: 1.2rem;
+  color: #79c0ff;
+}
+
+.contact-card a, 
+.contact-card span {
+  color: #e6edf3;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-card:hover {
+  border-color: #58a6ff;
+  background: #1c2128;
+  transform: translateY(-3px);
+}
+
+/* Responsive en móvil */
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ==== FOOTER ==== */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 30px;
   background-color: #161b22;
   color: #8b949e;
   border-top: 1px solid #21262d;
   font-size: 0.9rem;
+  margin-top: 50px;
 }
-
