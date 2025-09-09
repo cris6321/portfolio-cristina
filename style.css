@@ -53,10 +53,25 @@ header h2 {
 
 header p {
   max-width: 750px;
-  margin: 20px auto;
+  margin: 15px auto;
   color: #c9d1d9;
   font-size: 1.1rem;
   line-height: 1.8;
+}
+
+header .keywords {
+  font-weight: bold;
+  color: #79c0ff;
+  margin-top: 15px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #58a6ff;
+  object-fit: cover;
 }
 
 /* ==== BOTÓN CV ==== */
@@ -189,3 +204,4 @@ footer {
   font-size: 0.9rem;
   margin-top: 50px;
 }
+
