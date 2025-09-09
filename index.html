@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristina González Rodríguez</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="foto2.jpg" alt="Cristina González" class="profile-pic">
+    <!-- Botón modo oscuro/claro -->
+    <button id="theme-toggle" aria-label="Cambiar tema">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <img src="foto.jpg" alt="Cristina González" class="profile-pic">
     <h1>Cristina González Rodríguez</h1>
     <h2>Estudiante de Ingeniería en Sistemas de Telecomunicaciones</h2>
     <p class="keywords">📡 Telecomunicaciones | 🔐 Ciberseguridad OT | 📊 Análisis de Datos</p>
@@ -33,6 +39,32 @@
       <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
     </nav>
   </header>
+
+  <!-- Resumen rápido -->
+  <section id="resumen">
+    <div class="resumen-grid">
+      <div class="resumen-card">
+        <i class="fa-solid fa-university"></i>
+        <h3>Estudiante UPC</h3>
+        <p>Ingeniería en Sistemas de Telecomunicaciones</p>
+      </div>
+      <div class="resumen-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Ciberseguridad OT</h3>
+        <p>Prácticas en TMB – Metro de Barcelona</p>
+      </div>
+      <div class="resumen-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Análisis de Datos</h3>
+        <p>Microsoft Power BI, SQL, Python</p>
+      </div>
+      <div class="resumen-card">
+        <i class="fa-solid fa-language"></i>
+        <h3>Idiomas</h3>
+        <p>Castellano, Catalán, Inglés B2</p>
+      </div>
+    </div>
+  </section>
 
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
@@ -72,7 +104,7 @@
     <ul>
       <li><i class="fa-solid fa-tower-cell"></i> <strong>Telecomunicaciones:</strong> Teoría de señales, sistemas de comunicaciones (analógicos y digitales), RF y microondas, procesado digital de señal (DSP).</li>
       <li><i class="fa-solid fa-network-wired"></i> <strong>Redes:</strong> Protocolos TCP/IP, enrutamiento, redes inalámbricas y móviles (4G/5G básico).</li>
-      <li><i class="fa-solid fa-shield-halved"></i> <strong>Ciberseguridad OT:</strong> ISO 27000, Esquema Nacional de Seguridad (ENS), análisis de riesgos en sistemas industriales, segmentación de redes, seguridad en SCADA.</li>
+      <li><i class="fa-solid fa-shield-halved"></i> <strong>Ciberseguridad OT:</strong> ISO 27000, ENS, análisis de riesgos en sistemas industriales, segmentación de redes, seguridad en SCADA.</li>
       <li><i class="fa-solid fa-laptop-code"></i> <strong>Programación:</strong> C, C#, Java, Python, SQL, HTML, CSS.</li>
       <li><i class="fa-solid fa-gears"></i> <strong>Herramientas:</strong> Matlab, Proteus, ADS, Radio Mobile, Office.</li>
       <li><i class="fa-solid fa-microchip"></i> <strong>Instrumentación:</strong> Osciloscopios, analizadores de espectro, generadores de señal, cartas de Smith.</li>
@@ -125,7 +157,30 @@
 
   <footer>
     <p>© 2025 Cristina González Rodríguez</p>
+    <div class="footer-links">
+      <a href="mailto:crisgonzalez1999@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/cristina-gonzalez-rodriguez29" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
   </footer>
+
+  <!-- Script modo oscuro/claro -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const icon = toggleBtn.querySelector("i");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+      if (document.body.classList.contains("light-theme")) {
+        icon.classList.replace("fa-moon", "fa-sun");
+      } else {
+        icon.classList.replace("fa-sun", "fa-moon");
+      }
+    });
+  </script>
 </body>
 </html>
+
+
+
 
