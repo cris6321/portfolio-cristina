@@ -8,6 +8,7 @@
   --primary: #58a6ff;
   --primary-light: #79c0ff;
   --accent: #238636;
+  --bg-hover: #1c2128; /* hover en modo oscuro */
 }
 
 .light-theme {
@@ -19,6 +20,7 @@
   --primary: #2563eb;
   --primary-light: #3b82f6;
   --accent: #16a34a;
+  --bg-hover: #e5e7eb; /* hover en modo claro */
 }
 
 /* ==== ESTILOS GENERALES ==== */
@@ -40,6 +42,13 @@ h2 {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 8px;
   margin-bottom: 25px;
+}
+
+/* Espaciado uniforme para todos los títulos de sección */
+section h2 {
+  margin-top: 40px;  /* ajuste para mantener la misma separación entre secciones */
+  margin-bottom: 20px; /* puede ajustarlo si quiere más/menos separación */
+  font-size: 1.4rem;
 }
 
 p {
@@ -119,11 +128,7 @@ header .keywords {
 }
 
 /* ==== BOTÓN CV ==== */
-.cv-button {
-  margin: 30px 0;
-}
-
-.cv-button a {
+.cv-btn {
   display: inline-block;
   background: var(--accent);
   color: #ffffff;
@@ -134,10 +139,11 @@ header .keywords {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.cv-button a:hover {
+.cv-btn:hover {
   background: #2ea043;
   transform: translateY(-2px);
 }
+
 
 /* ==== NAVEGACIÓN ==== */
 nav {
@@ -192,7 +198,7 @@ nav a:hover {
 
 .resumen-card:hover {
   border-color: var(--primary);
-  background: #1c2128;
+  background: var(--bg-hover);
   transform: translateY(-3px);
 }
 
@@ -218,7 +224,7 @@ section ul li {
 }
 
 section ul li:hover {
-  background: #1c2128;
+  background: var(--bg-hover);
   border-color: var(--primary);
 }
 
@@ -297,7 +303,7 @@ section ul li i {
   color: var(--primary-light);
 }
 
-.contact-card a, 
+.contact-card a,
 .contact-card span {
   color: var(--text-color);
   text-decoration: none;
@@ -306,7 +312,7 @@ section ul li i {
 
 .contact-card:hover {
   border-color: var(--primary);
-  background: #1c2128;
+  background: var(--bg-hover);
   transform: translateY(-3px);
 }
 
@@ -316,7 +322,6 @@ section ul li i {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* ==== FOOTER ==== */
 footer {
@@ -381,7 +386,6 @@ footer .footer-links a:hover {
     font-size: 1.2rem;
   }
 }
-
 
 
 
