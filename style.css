@@ -386,6 +386,53 @@ footer .footer-links a:hover {
     font-size: 1.2rem;
   }
 }
+/* ==== CERTIFICADOS ==== */
+#certificados {
+  max-width: 950px;
+  margin: 80px auto;
+  padding: 0 25px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.cert-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  background: var(--bg-hover);
+}
+
+.cert-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.cert-card a {
+  display: block;
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.cert-card a:hover {
+  color: var(--primary-light);
+}
+
 
 
 
